@@ -32,10 +32,10 @@ from openai import AzureOpenAI
 load_dotenv(override=True)
 
 # ---- Azure OpenAI ----
-AZURE_OPENAI_API_KEY = os.getenv("AZURE_OPENAI_API_KEY", "BmaiYil8P7o3Dgv0JzIEIA4JYd3AHl7Jh6SzBdjkwXfF4DNxCzC3JQQJ99BGACYeBjFXJ3w3AAABACOGZkhi")
-AZURE_OPENAI_ENDPOINT = os.getenv("AZURE_OPENAI_ENDPOINT", "https://gpt-4o-intern.openai.azure.com/")
-AZURE_OPENAI_API_VERSION = os.getenv("AZURE_OPENAI_API_VERSION", "2024-12-01-preview")
-AZURE_DEPLOYMENT = os.getenv("AZURE_DEPLOYMENT", "gpt-4o-08-06")
+AZURE_OPENAI_API_KEY = os.getenv("AZURE_OPENAI_API_KEY",")
+AZURE_OPENAI_ENDPOINT = os.getenv("AZURE_OPENAI_ENDPOINT", "")
+AZURE_OPENAI_API_VERSION = os.getenv("AZURE_OPENAI_API_VERSION", "")
+AZURE_DEPLOYMENT = os.getenv("AZURE_DEPLOYMENT", "")
 DEFAULT_MODEL = AZURE_DEPLOYMENT
 
 oai_client = AzureOpenAI(
@@ -45,9 +45,9 @@ oai_client = AzureOpenAI(
 )
 
 # ---- Cloudinary ----
-CLOUDINARY_CLOUD_NAME = "dczody87a"
-CLOUDINARY_API_KEY = "553446782129746"
-CLOUDINARY_API_SECRET = "Nd48WZ0KFadHbUdZY_jnpTAKeRo"
+CLOUDINARY_CLOUD_NAME = ""
+CLOUDINARY_API_KEY = "
+CLOUDINARY_API_SECRET = ""
 
 cloudinary.config(
     cloud_name=CLOUDINARY_CLOUD_NAME,
@@ -587,4 +587,5 @@ def main() -> int:
         return 3
 
 if __name__ == "__main__":
+
     sys.exit(main())
