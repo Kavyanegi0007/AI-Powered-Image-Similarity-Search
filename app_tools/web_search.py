@@ -5,7 +5,7 @@ from typing import List, Dict, Any
 from dotenv import load_dotenv
 
 load_dotenv()
-SERP_API_KEY = "27f976da3d0e63206d31173e361fc7e5520d513819abf08914774c7c5f13475c"
+SERP_API_KEY = ""
 
 async def image_search(image_url: str, num: int = 5) -> List[Dict[str, Any]]:
     if not SERP_API_KEY:
@@ -33,5 +33,6 @@ async def image_search(image_url: str, num: int = 5) -> List[Dict[str, Any]]:
         }
         for x in images
     ]
+
 
 
