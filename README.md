@@ -1,6 +1,9 @@
 # AI-Powered Image Similarity Search
 
 An AI-driven image similarity and search pipeline that combines local dataset search (Azure Cognitive Search) and web-based search (Google Lens via SerpAPI). This tool allows you to input an image (local file or URL) and returns top-K visually similar images from both your indexed dataset and the web.
+<img width="1195" height="611" alt="image" src="https://github.com/user-attachments/assets/1281e368-9267-4cbd-95af-f86f357a417c" />
+
+<img width="1193" height="646" alt="image" src="https://github.com/user-attachments/assets/47a74734-5a3f-449d-ad7d-b995e0db697b" />
 
 ## Features
 
